@@ -9,7 +9,9 @@
 body{
     background: rgb(30,31,30);
 }
-
+.headicon{
+    color: #040c06;
+}
 main{
     display: flex;
     justify-content: center;
