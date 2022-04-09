@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title> EliteEagle Calculator </title>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <h1>EliteEagle Calculator 📲...</h1>
+            <div class="calculator">
+                <input type="text" class="result" id="result" value="0" maxlength="16">
+                <div class="resscreen" id="resscreen"></div>
+                <table>
+                    <tr>
+                        <td><button class="numkey Ackey" id="clear"> AC </button></td>
+                        <td><button class="numkey"> % </button></td>
+                        <td>
+                            <button class="numkey backkey0" id="backSpcBtn"> 
+                                <i class=" fa fa-long-arrow-left"> </i>
+                            </button>
+                        </td>
+                        <td><button class="numkey opkey"> / </button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="numkey"> 7 </button></td>
+                        <td><button class="numkey"> 8 </button></td>
+                        <td><button class="numkey"> 9 </button></td>
+                        <td><button class="numkey opkey"> * </button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="numkey"> 4 </button></td>
+                        <td><button class="numkey"> 5 </button></td>
+                        <td><button class="numkey"> 6 </button></td>
+                        <td><button class="numkey opkey"> - </button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="numkey"> 1 </button></td>
+                        <td><button class="numkey"> 2 </button></td>
+                        <td><button class="numkey"> 3 </button></td>
+                        <td><button class="numkey opkey"> + </button></td>
+                    </tr>
+                    <tr class="Bottomkey">
+                        <td><button class="numkey lrgBtn " id="zero"> 0 </button></td>
+                        <td><button class="numkey lrgBtn"> . </button></td>
+                        <td><button class="numkey assBtn" id="EqBtn" > = </button></td>
+                        <td><button class="Scikey backkey " id="SciBtn" > Sci </button></td>
+                    </tr>
+                </table>
+                <div class="SciSection" id="SciSection">
+                    <table>
+                        <tr>
+                            <td><button class="numkey backkey"> ( </button></td>
+                            <td><button class="numkey backkey"> ) </button></td>
+                            <td><button class="numkey"> e </button></td>
+                            <td><button class="numkey"> ! </button></td>
+                        </tr>
+                        <tr>
+                            <td><button class="numkey backkey"> <sup>2</sup>√ </button></td>
+                            <td><button class="numkey backkey"> <sup>3</sup>√ </button></td>
+                            <td><button class="numkey"> ^ </button></td>
+                            <td><button class="numkey backkey"> π </button></td>
+                        </tr>
+                        <tr>
+                            <td><button class="numkey backkey"> sin </button></td>
+                            <td><button class="numkey backkey"> cos </button></td>
+                            <td><button class="numkey backkey"> log </button></td>
+                            <td><button class="numkey backkey"> tan </button></td>
+                        </tr>
+                        <tr>
+                            <td><button class="numkey backkey"> l2e </button></td>
+                            <td><button class="numkey backkey"> l10e </button></td>
+                            <td><button class="numkey backkey"> exp </button></td>
+                            <td><button class="numkey backkey" > rad </button></td>                            
+                        </tr>
+                        <tr class="BottomSci">
+                            <td><button class="numkey backkey"> deg </button></td>
+                            <td><button class="arrowHead" id="closeSciBtn"> <span> <i class="fa fa-arrow-circle-left "> close </i></span></button></td>
+                        </tr>
+                        
+                        
+                    </table>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="./src/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,173 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background: rgb(30,31,30);
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    width: 29rem;  
+    background: rgb(70,74,70);
+    padding: 2rem;
+    margin: 5rem 1rem;
+    border-radius: 1rem;
+    box-shadow: inset 0 0 5px 5px rgb(20,6,6);
+}
+
+.container h1{
+    font: 400 2rem cursive, sans-serif;
+    color: goldenrod;
+    text-align: center;
+    margin: 0.5rem;
+}
+
+.container .calculator{
+    width: 18rem;
+    position: relative;
+    background: #281010;
+    padding: 1.5rem;
+    border-radius: 2rem;
+    margin: 1rem auto;
+    box-shadow: inset 0 0 5px 5px rgb(249 149 5)
+}
+.container .calculator input{
+    width: 99%;
+    height: 4rem;
+    padding: 0.8rem;
+    border-color: #281010;
+    border-radius: 0.9rem;
+    box-shadow: inset 0 0 5px 9px #1e1308;
+    font: 400 1.25rem sans-serif;
+    letter-spacing: 0.2rem;
+    outline: none;
+}
+
+.container .calculator table{
+    margin:1rem auto;
+    display: flex;   
+    position: relative;   
+}
+
+.container .calculator table tr{
+    display: grid;
+    grid-template-columns: auto auto auto auto ;
+    overflow: hidden;
+}
+
+.container .calculator table .numkey:active,
+ .Scikey:active,
+ .arrowHead:active,
+ .backkey:active {
+    transform: scale(0.90);
+}
+
+.container .calculator table button{
+    font: 400 1.5rem cursive;
+    width: 3.25rem;
+    height: 2.5rem;
+    border-radius: 2.5rem;
+    margin: 0.25rem;
+    color: #f5ffff;
+    background: #5a1855;
+    padding: 0.2rem;
+    text-align: center;
+    outline: none;
+    border: none;
+}
+.container .calculator .backkey0{
+    font: 400 1.15rem sans-serif;
+    color: #fdffe2;
+    background: #ad0808;
+}
+.container .calculator .backkey{
+    font: 400 1.34rem cursive;
+}
+.container .calculator .SciSection{
+
+    /* width: 12.5rem; */
+    padding: 0.2rem 0.6rem 0.2rem 0.6rem;
+    position: absolute;
+    bottom: 0.1rem;
+    left: 0.2rem;
+    backdrop-filter: blur(1rem);
+    border-radius: 0 2rem 2rem 2rem;
+    box-shadow: inset 0 0 5px 5px rgb(42 197 42);
+    display: none;
+
+    -webkit-animation-name: fadeIn ;
+    -webkit-animation-duration: 0.5s ;
+    animation-name: fadeIn ;
+    animation-duration: 0.5s;
+}
+
+@-webkit-keyframes fadeIn {
+    from {
+        /* transform: translate(0px,0px); */
+        transform: scaleX(0);
+    } 
+    to {
+        /* transform: translate(50px,100px); */
+        transform: scaleX(1);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        transform: scaleX(0);
+    } 
+    to {
+        transform: scaleX(1);
+    }
+}
+.container .calculator .SciSection button{
+    background: #8f8f8f;
+    color: #1e1308;
+}
+
+.calculator .SciSection .arrowHead{
+    color: #8f8f8f;
+    border-radius: 2rem;
+    width: 10.75rem;
+    font: 600 1.7rem cursive;
+    height: 2.5rem;
+}
+.container .calculator .Ackey{
+    color: rgb(246 249 226);
+    background: #f50000;
+}
+.container .calculator .opkey{
+    color: rgb(255 255 255);
+    background: #6f7600;
+}
+.container .calculator .assBtn{
+    color: #f0ff0d;
+    background: #d14787;
+}
+
+.container .calculator .BottomSci{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.container .calculator .resscreen{
+    height: 2.5rem;
+    background: #282826;
+    backdrop-filter: blur(5px);
+    color: rgb(42 197 42);
+    border-radius: 1rem;
+    padding: 0.52rem 0.9rem;
+    max-width: 94%;
+    border: 0.1rem solid black;
+    letter-spacing: 0.091rem;
+    margin: 0.5rem;
+}
