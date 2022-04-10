@@ -9,7 +9,9 @@
 body{
     background: rgb(30,31,30);
 }
-
+.headicon{
+    color: #040c06;
+}
 main{
     display: flex;
     justify-content: center;
@@ -84,10 +86,19 @@ main{
     outline: none;
     border: none;
 }
+
+.container .calculator table .BtnsKey:hover{
+    color: #000000;
+    background: #606060;
+}
 .container .calculator .backkey0{
     font: 400 1.15rem sans-serif;
     color: #fdffe2;
     background: #ad0808;
+}
+.container .calculator .backkey0:hover{
+    color: #edff00;
+    background: #4c4b4b;
 }
 .container .calculator .backkey{
     font: 400 1.34rem cursive;
@@ -129,29 +140,58 @@ main{
         transform: scaleX(1);
     }
 }
-.container .calculator .SciSection button{
+
+/* Scientific section */
+.container .calculator .SciSection .Btnclr{
     background: #8f8f8f;
     color: #1e1308;
 }
+.container .calculator .SciSection .Btnclr:hover{
+    background: #1e1308;
+    color: #8f8f8f;
+}
 
 .calculator .SciSection .arrowHead{
-    color: #8f8f8f;
+    color: #f2f9f7;
+    background: #000000;
     border-radius: 2rem;
     width: 10.75rem;
-    font: 600 1.7rem cursive;
+    font-family: cursive;
     height: 2.5rem;
 }
+.container .calculator .arrowHead:hover{
+    background: #ee8e06;
+    color: #ede9e5;
+}
+
+
+ /* AC button */
 .container .calculator .Ackey{
     color: rgb(246 249 226);
     background: #f50000;
 }
+.container .calculator .Ackey:hover{
+    color: rgb(219 219 219);
+    background: #c77707;
+}
+/* Operation Button */
 .container .calculator .opkey{
     color: rgb(255 255 255);
     background: #6f7600;
 }
+.container .calculator .opkey:hover{
+    color: rgb(30 10 10);
+    background: #a1a1a1;
+}
+
+/* Equal button */
 .container .calculator .assBtn{
     color: #f0ff0d;
     background: #d14787;
+}
+.container .calculator .assBtn:hover{
+    color: #000000;
+    background: #0a5a81;
 }
 
 .container .calculator .BottomSci{
