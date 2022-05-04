@@ -16,12 +16,12 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100vh;
 }
 .container{
     width: 29rem;  
     background: rgb(70,74,70);
     padding: 2rem;
-    margin: 5rem 1rem;
     border-radius: 1rem;
     box-shadow: inset 0 0 5px 5px rgb(20,6,6);
 }
